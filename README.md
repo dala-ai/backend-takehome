@@ -23,15 +23,15 @@ print the list of records, along with the start and end index from the original
 doc, as well as the word count of each record.
 
 # Requirements
-- Each record should contain at least the minimum number of words, and at most
-  the maximum number of words passed into the method, inclusive.
-- Minimum threeshold exceptions:
-    - a paragraph with less than the minimum threeshold results in a single record.
-    - the last record for a paragraph may contain less than the minimum if attaching it to a previous record produces a record that exceeds the maximum threeshold.
 - Records should only contain sentences from the same paragraph.
 - Each record should only contain full sentences, and not have any dangling words.
+- Each record should contain at least the minimum number of words, and at most
+  the maximum number of words passed into the method, inclusive.
 - If a sentence has more words than the maximum number of words, it may be the
   only sentence in that record.
+- A paragraph with less than the minimum threshold results in a single record.
+- The last sentence in a paragraph may contain less than the minimum threshold.
+
 
 # Instructions
 - Do not take more than 1 hour to complete this exercise
